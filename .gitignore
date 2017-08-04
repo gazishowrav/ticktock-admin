@@ -1,0 +1,34 @@
+# Mac OS X files
+.DS_Store
+ehthumbs.db
+Thumbs.db
+
+# Ignore installed packages
+node_modules/
+bower_components/
+.sass-cache/
+
+# Exclude various WordPress folders
+languages/
+layouts/
+cache/
+rtl.css
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
