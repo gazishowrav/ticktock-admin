@@ -1,0 +1,56 @@
+//
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+//  META BOX
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+//
+.meta-box-sortables,
+.postbox {
+  box-shadow: none;
+}
+
+.metabox-holder {
+  .postbox {
+    background: $white;
+    // border: 1px solid darken($body-background-color, 5%);
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 
+      0 2px 10px rgba($black, .025),
+      0 0 2px rgba($black, .05);
+
+    .ui-sortable-handle {
+      background: transparent;
+      border: 0;
+      font-size: 12px !important;
+      text-transform: uppercase;
+    }
+
+    .handlediv {
+      height: 32px;
+    }
+
+    .inside {
+      background: transparent;
+      // border: 1px solid darken($body-background-color, 5%);
+      box-sizing: border-box;
+      display: inline-block;
+      margin: 0 !important;
+      width: 100%;
+      vertical-align: top;
+    }
+  }
+}
+
+//
+//  CLOSED
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.metabox-holder {
+  .postbox {
+    &.closed {
+      .inside {
+        display: none;
+      }
+    }
+  }
+}

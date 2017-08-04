@@ -1,0 +1,113 @@
+//
+//  BUTTONS
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+//
+//  VARIABLES
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$button-border-width: 1px;
+$button-border-radius: 2px;
+$button-box-shadow: inset 0 1px 0 rgba($white, .15);
+$button-font-size: 12px;
+$button-font-weight: normal;
+$button-letter-spacing: .25px;
+$button-text-shadow: none;
+$button-text-transform: uppercase;
+
+
+//
+//  LARGE
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$button-large-border-radius: $button-border-radius;
+$button-large-font-size: 14px;
+$button-large-font-weight: bold;
+$button-large-padding: 0 14px;
+
+
+//
+//  STANDARD
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Standard button.
+$button-background-color: mix($color-primary, $white, 6%);
+$button-border-color: mix($black, $button-background-color, 10%);
+$button-font-color: $color-primary;
+
+// Hover.
+$button-background-color-hover: darken($button-background-color, 5%);
+$button-border-color-hover: darken($button-border-color, 5%);
+$button-font-color-hover: $button-font-color;
+
+
+//
+//  PRIMARY
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$button-primary-background-color: $color-primary;
+$button-primary-border-color: darken($button-primary-background-color, 5%);
+$button-primary-font-color: $white;
+
+// Hover
+$button-primary-background-color-hover: darken($button-primary-background-color, 5%);
+$button-primary-border-color-hover: darken($button-primary-border-color, 5%);
+$button-primary-font-color-hover: $button-primary-font-color;
+
+
+
+//
+//  STYLES
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Standard button.
+.wp-core-ui {
+
+  // Global styles.
+  .button,
+  .button-primary {
+    border: $button-border-width solid $button-border-color;
+    border-radius: $button-border-radius;
+    box-shadow: $button-box-shadow;
+    font-weight: $button-font-weight;
+    font-size: $button-font-size;
+    letter-spacing: $button-letter-spacing;
+    text-shadow: $button-text-shadow;
+    text-transform: $button-text-transform;
+    transition: all .2s ease;
+  }
+
+  // Large.
+  .button-large {
+    border-radius: $button-large-border-radius;
+    font-size: $button-large-font-size;
+    font-weight: $button-large-font-weight;
+    padding: $button-large-padding;
+  }
+
+  // Standard.
+  .button {
+    background-color: $button-background-color;
+    color: $button-font-color;
+
+    &:hover {
+      background-color: $button-background-color-hover;
+      border-color: $button-border-color-hover;
+      color: $button-font-color-hover;
+    }
+  }
+  
+  // Primary.
+  .button-primary {
+    background-color: $button-primary-background-color;
+    border-color: $button-primary-border-color;
+    color: $button-primary-font-color;
+
+    &:hover {
+      background-color: $button-primary-background-color-hover;
+      border-color: $button-primary-border-color-hover;
+      color: $button-primary-font-color-hover;
+    }
+  }
+}

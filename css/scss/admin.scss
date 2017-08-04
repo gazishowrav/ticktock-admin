@@ -1,0 +1,34 @@
+//
+//  ADMIN STYLES
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+//
+//  VARIABLES
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@import 'partials/color';
+@import 'partials/base';
+
+
+//
+//  COMPONENTS
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@import 'partials/components/buttons';
+@import 'partials/components/forms';
+@import 'partials/components/admin-menu';
+@import 'partials/components/meta-box';
+@import 'partials/components/wp-editor';
+
+
+//
+//  ACF
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@import 'partials/acf/repeater';
+
+//
+//  PAGES
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@import 'partials/pages/dashboard';

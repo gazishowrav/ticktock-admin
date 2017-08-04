@@ -1,0 +1,38 @@
+//
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+//  COLOR
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+//
+$black: #000;
+$white: #fff;
+
+// Utility colors.
+$color-primary: #0074d9;
+$color-secondary: #40a9ff;
+$color-tertiary: #85144b;
+
+// Grays.
+$gray-mixer: $color-primary;
+$color-gray-f: mix(#fcfcfc, $gray-mixer, 98%);
+$color-gray-e: mix(#eee, $gray-mixer, 95%);
+$color-gray-d: mix(#ddd, $gray-mixer, 95%);
+$color-gray-c: mix(#ccc, $gray-mixer, 95%);
+$color-gray-b: mix(#bbb, $gray-mixer, 95%);
+$color-gray-a: mix(#aaa, $gray-mixer, 95%);
+$color-gray-9: mix(#999, $gray-mixer, 95%);
+$color-gray-8: mix(#888, $gray-mixer, 95%);
+$color-gray-7: mix(#777, $gray-mixer, 93%);
+$color-gray-6: mix(#666, $gray-mixer, 92%);
+$color-gray-5: mix(#555, $gray-mixer, 91%);
+$color-gray-4: mix(#444, $gray-mixer, 90%);
+$color-gray-3: mix(#333, $gray-mixer, 89%);
+$color-gray-2: mix(#222, $gray-mixer, 88%);
+$color-gray-1: mix(#111, $gray-mixer, 85%);
+
+
+//
+//  GENERAL UI
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$body-background-color: $color-gray-f;
+// $body-background-color: $white;

@@ -1,0 +1,21 @@
+//
+//  REPEATER
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.acf-repeater {
+  .acf-row {
+    td,
+    td.ui-sortable-handle {
+      border-bottom: 4px solid #dfdfdf;
+      text-shadow: 0;
+    }
+    
+
+    &:hover {
+      > .acf-row-handle.order {
+        background-color: $color-primary;
+        color: $white;
+      }
+    }
+  }
+}
