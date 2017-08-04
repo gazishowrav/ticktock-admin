@@ -11,7 +11,8 @@ $admin-menu-text-transform: uppercase;
 $admin-menu-background-color: $white;
 // $admin-menu-background-color: lighten($body-background-color, 3%);
 $admin-menu-border-color: darken($admin-menu-background-color, 10%);
-$admin-menu-border: 0 solid $admin-menu-border-color;
+$admin-menu-border-width: 0;
+$admin-menu-border: $admin-menu-border-width solid $admin-menu-border-color;
 $admin-menu-font-color: $color-gray-6;
 $admin-menu-icon-color: rgba($color-gray-6, .5);
 
@@ -48,7 +49,7 @@ $admin-menu-sub-menu-font-color-active: $color-primary;
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 $admin-menu-width-expanded: 160px;
-$admin-menu-width-expanded-active: $admin-menu-width-expanded + 1;
+$admin-menu-width-expanded-active: $admin-menu-width-expanded + $admin-menu-border-width;
 
 #adminmenuwrap,
 #adminmenu,
@@ -56,9 +57,12 @@ $admin-menu-width-expanded-active: $admin-menu-width-expanded + 1;
   background-color: $admin-menu-background-color;
 }
 
+#adminmenuback {
+  // box-shadow: 5px 0 15px rgba($black, .025);
+}
+
 #adminmenuwrap {
   border-right: $admin-menu-border;
-  box-shadow: 5px 0 15px rgba($black, .025);
 }
 
 
@@ -219,10 +223,21 @@ $admin-menu-width-expanded-active: $admin-menu-width-expanded + 1;
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 #adminmenu {
-  .wp-has-current-submenu {
+  .wp-has-current-submenu,
+  .wp-has-current-submenu.opensub {
     .wp-submenu {
       background-color: $admin-menu-sub-menu-background-color;
       border-bottom: $admin-menu-sub-menu-border;
+    }
+  }
+
+  .wp-has-current-submenu.opensub {
+    .wp-submenu {
+      li.current {
+        a {
+          color: $admin-menu-sub-menu-font-color-active;
+        }
+      }
     }
   }
 

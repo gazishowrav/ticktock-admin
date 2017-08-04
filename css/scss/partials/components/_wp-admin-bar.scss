@@ -1,0 +1,36 @@
+//
+//  WP ADMIN BAR
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$wp-admin-bar-background-color: $white;
+$wp-admin-bar-font-color: $base-font-color;
+$wp-admin-bar-icon-color: $base-font-color;
+
+#wpadminbar {
+  background: $wp-admin-bar-background-color;
+  // box-shadow: 0 5px 15px rgba($black, .025);
+
+  .quicklinks {
+    .ab-item {
+      color: $wp-admin-bar-font-color;
+
+      &:before {
+        color: $wp-admin-bar-icon-color;
+      }
+    }
+
+    .ab-icon {
+      color: $wp-admin-bar-font-color;
+
+      &:before {
+        color: $wp-admin-bar-icon-color;
+      }
+    }
+  }
+  
+  #wp-toolbar {
+    span.ab-label {
+      color: $wp-admin-bar-font-color;
+    }
+  }
+}

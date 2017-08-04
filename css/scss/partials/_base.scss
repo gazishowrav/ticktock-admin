@@ -1,10 +1,19 @@
 //
-//––––––––––––––––––––––––––––––––––––––––––––––––––
 //  BASE
 //––––––––––––––––––––––––––––––––––––––––––––––––––
-//
+
 $gutter: 20px;
 
 body {
   background-color: $body-background-color;
+}
+
+#wpcontent {
+  box-shadow: inset 5px 5px 15px rgba($black, .025);
+  padding-left: $gutter * 2;
+}
+
+.wrap {
+  margin-top: $gutter * 1.5;
+  margin-right: $gutter * 2;
 }

@@ -2,6 +2,7 @@
 //  ADMIN STYLES
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+
 //
 //  VARIABLES
 //––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -14,9 +15,12 @@
 //  COMPONENTS
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+@import 'partials/components/wp-admin-bar';
+@import 'partials/components/screen-meta-links';
 @import 'partials/components/buttons';
 @import 'partials/components/forms';
 @import 'partials/components/admin-menu';
+@import 'partials/components/nav-tab';
 @import 'partials/components/meta-box';
 @import 'partials/components/wp-editor';
 
@@ -26,6 +30,7 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 @import 'partials/acf/repeater';
+
 
 //
 //  PAGES

@@ -1,8 +1,7 @@
 //
-//––––––––––––––––––––––––––––––––––––––––––––––––––
 //  COLOR
 //––––––––––––––––––––––––––––––––––––––––––––––––––
-//
+
 $black: #000;
 $white: #fff;
 
@@ -14,8 +13,8 @@ $color-tertiary: #85144b;
 // Grays.
 $gray-mixer: $color-primary;
 $color-gray-f: mix(#fcfcfc, $gray-mixer, 98%);
-$color-gray-e: mix(#eee, $gray-mixer, 95%);
-$color-gray-d: mix(#ddd, $gray-mixer, 95%);
+$color-gray-e: mix(#eee, $gray-mixer, 98%);
+$color-gray-d: mix(#ddd, $gray-mixer, 97%);
 $color-gray-c: mix(#ccc, $gray-mixer, 95%);
 $color-gray-b: mix(#bbb, $gray-mixer, 95%);
 $color-gray-a: mix(#aaa, $gray-mixer, 95%);
@@ -36,3 +35,4 @@ $color-gray-1: mix(#111, $gray-mixer, 85%);
 
 $body-background-color: $color-gray-f;
 // $body-background-color: $white;
+$base-font-color: $color-gray-5;
