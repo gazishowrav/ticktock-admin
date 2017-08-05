@@ -149,6 +149,7 @@ $admin-menu-width-expanded-active: $admin-menu-width-expanded + $admin-menu-bord
       background-color: $admin-menu-background-color-active;
       border-bottom: $admin-menu-border;
       border-top: $admin-menu-border;
+      color: $admin-menu-font-color-active;
       width: $admin-menu-width-expanded-active;
 
       &:after {
@@ -224,15 +225,19 @@ $admin-menu-width-expanded-active: $admin-menu-width-expanded + $admin-menu-bord
 
 #adminmenu {
   .wp-has-current-submenu,
-  .wp-has-current-submenu.opensub {
-    .wp-submenu {
+  .wp-has-current-submenu.opensub,
+  a.wp-has-current-submenu:focus {
+    .wp-submenu,
+    + .wp-submenu {
       background-color: $admin-menu-sub-menu-background-color;
       border-bottom: $admin-menu-sub-menu-border;
     }
   }
 
-  .wp-has-current-submenu.opensub {
-    .wp-submenu {
+  .wp-has-current-submenu.opensub,
+  a.wp-has-current-submenu:focus {
+    .wp-submenu,
+    + .wp-submenu {
       li.current {
         a {
           color: $admin-menu-sub-menu-font-color-active;

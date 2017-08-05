@@ -1,0 +1,122 @@
+//
+//  TABLE
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$table-border-bottom-color: $color-gray-e;
+$table-background-color: $white;
+$table-zebra-background-color: lighten($color-gray-f, 1%);
+
+table.wp-list-table {
+  border: 0;
+  box-shadow: 0 5px 15px rgba($black, .025);
+  padding: $gutter/2 0;
+  // padding: $gutter/2;
+  
+  // Zebra stripes.
+  > tbody > :nth-child(odd) {
+    background: $table-zebra-background-color;
+  }
+
+  tr {
+    background: $table-background-color;
+  }
+
+  thead {
+    td, th {
+      border-bottom: 1px solid $table-border-bottom-color;
+    }
+  }
+  
+  tbody {
+    td, th {
+      border-bottom: 1px solid $table-border-bottom-color;
+      box-shadow: none !important;
+      vertical-align: middle;
+    }
+  }
+
+  tfoot {
+    td, th {
+      border-top: 1px solid $table-border-bottom-color;
+    }
+  }
+}
+
+
+//
+//  CHECK COLUMN
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+table.wp-list-table {
+  thead,
+  tbody,
+  tfoot {
+    .check-column {
+      padding: 0;
+      padding-left: $gutter;
+      vertical-align: middle;
+
+      input {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+
+//
+//  ROW ACTIONS
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+table.wp-list-table {
+  td {
+    position: relative;
+    
+    // &.has-row-actions {
+    //   position: relative;
+    // }
+  }
+
+  .row-actions {
+    font-size: 10px;
+    bottom: 6px;
+    font-weight: bold;
+    letter-spacing: .025em;
+    line-height: 1;
+    position: absolute;
+    text-transform: uppercase;
+
+    span {
+      color: transparent;
+    }
+  }
+
+  tr {
+    &:hover {
+      .row-actions {
+        left: 10px;
+      }
+    }
+  }
+}
+
+
+//
+//  THEAD AND TFOOT
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+table.wp-list-table {
+  thead,
+  tfoot {
+    th {
+      color: $color-gray-8;
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      a {
+        color: $color-gray-8;
+      }
+    }
+  }
+}

@@ -19,6 +19,7 @@ $nav-tab-hover-border-width: 2px;
 $nav-tab-active-background-color: transparent;
 $nav-tab-active-border-color: $color-primary;
 $nav-tab-active-border-width: 2px;
+$nav-tab-active-font-color: $color-primary;
 
 .wrap {
   .nav-tab-wrapper,
@@ -33,8 +34,11 @@ $nav-tab-active-border-width: 2px;
   // border: $nav-tab-border-width solid $nav-tab-border-color;
   // border-bottom: 0;
   border: 0;
-  margin-left: 0;
   margin-bottom: -$nav-tabs-border-bottom-width;
+  margin-left: 0;
+  margin-right: $gutter;
+  padding-left: 0;
+  padding-right: 0;
 
   &:hover {
     background: $nav-tab-hover-background-color;
@@ -46,5 +50,37 @@ $nav-tab-active-border-width: 2px;
     // border: $nav-tab-active-border-width solid $nav-tab-active-border-color;
     border: 0;
     border-bottom: $nav-tab-active-border-width solid $nav-tab-active-border-color;
+    color: $nav-tab-active-font-color;
+  }
+}
+
+
+//
+//  SUB SUB SUB
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.subsubsub {
+  border-bottom: $nav-tabs-border-bottom-width solid $nav-tabs-border-bottom-color;
+  color: $body-background-color;
+  margin-bottom: $gutter;
+
+  li {
+    color: $body-background-color;
+    display: inline-block;
+  }
+
+  a {
+    border-bottom: $nav-tabs-border-bottom-width solid transparent;
+    display: inline-block;
+    margin-bottom: -$nav-tabs-border-bottom-width;
+    margin-left: 0;
+    margin-right: $gutter;
+    padding: 5px 0;
+
+    &.current {
+      border: 0;
+      border-bottom: $nav-tab-active-border-width solid $nav-tab-active-border-color;
+      color: $nav-tab-active-font-color;
+    }
   }
 }

@@ -1,0 +1,32 @@
+//
+//  TABLE NAV
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// $table-nav-background-color: $white;
+$table-nav-background-color: lighten($color-gray-f, 1%);
+$table-nav-border-color: $color-gray-e;
+
+.tablenav {
+  background: $table-nav-background-color;
+  box-shadow: 0 5px 15px rgba($black, .025);
+  margin: 0;
+  padding: $gutter/2 $gutter;
+  // padding: $gutter/2;
+
+  &.top {
+    border-bottom: 1px solid $table-nav-border-color;
+    border-radius: 5px 5px 0 0;
+    margin-top: $gutter;
+    // padding-top: $gutter;
+  }
+
+  &.bottom {
+    border-top: 1px solid $table-nav-border-color;
+    border-radius: 0 0 5px 5px;
+    // padding-bottom: $gutter;
+  }
+
+  .actions {
+    padding-top: 0;
+  }
+}

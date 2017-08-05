@@ -4,36 +4,45 @@
 
 
 //
-//  VARIABLES
+//  ABSTRACTS
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-@import 'partials/color';
-@import 'partials/base';
+@import 'abstracts/color';
+
+
+//
+//  ABSTRACTS
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@import 'base/base';
+@import 'base/typography';
 
 
 //
 //  COMPONENTS
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-@import 'partials/components/wp-admin-bar';
-@import 'partials/components/screen-meta-links';
-@import 'partials/components/buttons';
-@import 'partials/components/forms';
-@import 'partials/components/admin-menu';
-@import 'partials/components/nav-tab';
-@import 'partials/components/meta-box';
-@import 'partials/components/wp-editor';
+@import 'components/wp-admin-bar';
+@import 'components/screen-meta-links';
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/table';
+@import 'components/table-nav';
+@import 'components/admin-menu';
+@import 'components/nav-tab';
+@import 'components/meta-box';
+@import 'components/wp-editor';
 
 
 //
 //  ACF
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-@import 'partials/acf/repeater';
+@import 'acf/repeater';
 
 
 //
 //  PAGES
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-@import 'partials/pages/dashboard';
+@import 'pages/dashboard';
