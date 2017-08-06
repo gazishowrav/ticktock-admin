@@ -1,0 +1,60 @@
+//
+//  MEDIA QUERIES
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Breakpoints.
+$breakpoint-xs: 480px;  // Random small breakpoint.
+$breakpoint-sm: 783px;  // Mobile admin menu.
+$breakpoint-md: 850px;  // Admin menu goes slim.
+$breakpoint-lg: 960px;  // Layouts go to 2 columns.
+$breakpoint-xl: 1200px; // Random large breakpoint.
+
+// @include respond-above(md) {}
+@mixin respond-above($breakpoint) {
+  @if $breakpoint == 'xs' {
+    @media (min-width: $breakpoint-xs) {
+      @content;
+    }
+  } @else if $breakpoint == 'sm' {
+    @media (min-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else if $breakpoint == 'md' {
+    @media (min-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $breakpoint == 'lg' {
+    @media (min-width: $breakpoint-lg) {
+      @content;
+    }
+  } @else if $breakpoint == 'xl' {
+    @media (min-width: $breakpoint-xl) {
+      @content;
+    }
+  }
+}
+
+// @include respond-below(md) {}
+@mixin respond-below($breakpoint) {
+  @if $breakpoint == 'xs' {
+    @media (max-width: ($breakpoint-xs - 1)) {
+      @content;
+    }
+  } @else if $breakpoint == 'sm' {
+    @media (max-width: ($breakpoint-sm - 1)) {
+      @content;
+    }
+  } @else if $breakpoint == 'md' {
+    @media (max-width: ($breakpoint-md - 1)) {
+      @content;
+    }
+  } @else if $breakpoint == 'lg' {
+    @media (max-width: ($breakpoint-lg - 1)) {
+      @content;
+    }
+  } @else if $breakpoint == 'xl' {
+    @media (max-width: ($breakpoint-xl - 1)) {
+      @content;
+    }
+  }
+}

@@ -33,6 +33,7 @@ $color-gray-1: mix(#111, $gray-mixer, 85%);
 //  GENERAL UI
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-$body-background-color: darken($color-gray-f, 2%);
+$body-background-color: $white;
+$body-content-background-color: darken($color-gray-f, 2%);
 // $body-background-color: $white;
 $base-font-color: $color-gray-5;

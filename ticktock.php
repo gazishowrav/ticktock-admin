@@ -10,15 +10,15 @@ Description: Tick Tock WordPress admin customisations.
 
 function remove_dashboard_widgets() {
   global $wp_meta_boxes;
-  unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_quick_press']);
-  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_incoming_links']);
-  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_activity']);
-  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_right_now']);
-  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_plugins']);
-  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_recent_drafts']);
-  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_recent_comments']);
-  unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']);
-  unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);
+  // unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_quick_press']);
+  // unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_incoming_links']);
+  // unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_activity']);
+  // unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_right_now']);
+  // unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_plugins']);
+  // unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_recent_drafts']);
+  // unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_recent_comments']);
+  // unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']);
+  // unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);
 
 }
 add_action('wp_dashboard_setup', 'remove_dashboard_widgets' );
@@ -123,10 +123,9 @@ function ticktock_pages_function() {
 
 
 //
-//––––––––––––––––––––––––––––––––––––––––––––––––––
 //  CUSTOM ADMIN CSS
 //––––––––––––––––––––––––––––––––––––––––––––––––––
-//
+
 function ticktock_load_custom_wp_admin_style(){
     // wp_register_style( 'custom_wp_admin_css', plugin_dir_path( __FILE__ ) . 'css/admin.css', false, '1.0.0' );
     wp_register_style( 'custom_wp_admin_css', plugins_url('/css/admin.css', __FILE__), false, '1.0.0' );

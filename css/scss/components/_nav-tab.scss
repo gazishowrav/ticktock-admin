@@ -61,11 +61,11 @@ $nav-tab-active-font-color: $color-primary;
 
 .subsubsub {
   border-bottom: $nav-tabs-border-bottom-width solid $nav-tabs-border-bottom-color;
-  color: $body-background-color;
+  color: $body-content-background-color;
   margin-bottom: $gutter;
 
   li {
-    color: $body-background-color;
+    color: $body-content-background-color;
     display: inline-block;
   }
 

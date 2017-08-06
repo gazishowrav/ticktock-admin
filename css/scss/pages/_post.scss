@@ -1,0 +1,61 @@
+//
+//  POST
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+#poststuff {
+  #post-body {
+    // This makes the padding between columns 20px larger.
+    &.columns-2 {
+      margin-right: 320px;
+
+      .postbox-container {
+        margin-right: -320px;
+      }
+    }
+  }
+}
+
+
+//
+//  PAGE ATTRIBUTES
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+#pageparentdiv {
+  .inside {
+    p {
+      margin-top: 0;
+    }
+  }
+}
+
+
+//
+//  FEATURED POST METABOX
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+#postimagediv {
+  .inside {
+    p {
+      margin: 0;
+    }
+  }
+}
+
+// Featured image button.
+#set-post-thumbnail {
+  background-color: $button-background-color;
+  border: $button-border-width solid $button-border-color;
+  border-radius: $button-large-border-radius;
+  box-shadow: $button-box-shadow;
+  color: $button-font-color;
+  display: inline-block;
+  font-weight: $button-large-font-weight;
+  font-size: $button-large-font-size;
+  letter-spacing: $button-letter-spacing;
+  line-height: 1.4em;
+  padding: 10px 15px;
+  text-shadow: $button-text-shadow;
+  text-transform: $button-text-transform;
+  text-decoration: none;
+  transition: all .2s ease;
+}

@@ -150,7 +150,10 @@ $admin-menu-width-expanded-active: $admin-menu-width-expanded + $admin-menu-bord
       border-bottom: $admin-menu-border;
       border-top: $admin-menu-border;
       color: $admin-menu-font-color-active;
-      width: $admin-menu-width-expanded-active;
+
+      @include respond-above(lg) {
+        width: $admin-menu-width-expanded-active;
+      }
 
       &:after {
         display: none;
@@ -171,7 +174,10 @@ $admin-menu-width-expanded-active: $admin-menu-width-expanded + $admin-menu-bord
       border-bottom: $admin-menu-border;
       border-top: $admin-menu-border;
       color: $admin-menu-font-color-active;
-      width: $admin-menu-width-expanded-active;
+
+      @include respond-above(lg) {
+        width: $admin-menu-width-expanded-active;
+      }
 
       &:after {
         display: none;

@@ -14,14 +14,14 @@ $button-font-size: 12px;
 $button-font-weight: normal;
 $button-letter-spacing: .25px;
 $button-text-shadow: none;
-$button-text-transform: normal;
+$button-text-transform: none;
 
 
 //
 //  LARGE
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-$button-large-border-radius: $button-border-radius;
+$button-large-border-radius: 4px;
 $button-large-font-size: 14px;
 $button-large-font-weight: bold;
 $button-large-padding: 0 14px;

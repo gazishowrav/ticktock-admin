@@ -1,0 +1,15 @@
+//
+//  USERS
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.users-php {
+  table.wp-list-table {
+    tr {
+      &:hover {
+        .row-actions {
+          left: 52px;
+        }
+      }
+    }
+  }
+}

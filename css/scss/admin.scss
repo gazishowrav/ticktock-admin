@@ -7,6 +7,7 @@
 //  ABSTRACTS
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+@import 'abstracts/media-queries';
 @import 'abstracts/color';
 
 
@@ -46,3 +47,5 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 @import 'pages/dashboard';
+@import 'pages/post';
+@import 'pages/users';

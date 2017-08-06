@@ -2,8 +2,48 @@
 //  WP EDITOR
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+#post-body-content {
+  margin-bottom: $gutter;
+}
+
+@include respond-above(sm) {
+  #post-body-content {
+    margin-bottom: $gutter * 2;
+  }  
+}
+
 .wp-editor-expand {
   #wp-content-editor-tools {
     background: transparent;
+  }
+}
+
+
+//
+//  TEXTAREA
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.wp-editor-container, 
+.wp-editor-expand {
+  textarea.wp-editor-area {
+    border: 0;
+    border-radius: 0;
+  }
+}
+
+
+//
+//  FOOTER
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// This is the text below the wp-editor textarea.
+.wp-editor-expand {
+  #post-status-info {
+    td {
+      color: $color-gray-8;
+      font-size: 10px;
+      letter-spacing: .025em;
+      text-transform: uppercase;
+    }
   }
 }
