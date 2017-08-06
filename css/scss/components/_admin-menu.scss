@@ -4,6 +4,7 @@
 
 $admin-menu-font-size: 12px;
 $admin-menu-text-transform: uppercase;
+$admin-menu-letter-spacing: .025em;
 
 
 // Standard menu item.
@@ -74,6 +75,7 @@ $admin-menu-width-expanded-active: $admin-menu-width-expanded + $admin-menu-bord
   a.menu-top {
     color: $admin-menu-font-color;
     font-size: $admin-menu-font-size;
+    letter-spacing: $admin-menu-letter-spacing;
     text-transform: $admin-menu-text-transform;
     transition: all .2s ease;
 
@@ -121,6 +123,7 @@ $admin-menu-width-expanded-active: $admin-menu-width-expanded + $admin-menu-bord
     a.menu-top {
       background-color: $admin-menu-background-color-hover;
       color: $admin-menu-font-color-hover;
+      letter-spacing: $admin-menu-letter-spacing;
 
       .wp-menu-image {
         &:before {
@@ -230,6 +233,7 @@ $admin-menu-width-expanded-active: $admin-menu-width-expanded + $admin-menu-bord
       li {
         a {
           color: $admin-menu-dropdown-font-color;
+          letter-spacing: $admin-menu-letter-spacing;
 
           &:hover {
             background-color: $admin-menu-dropdown-background-color-hover;
@@ -281,8 +285,8 @@ $admin-menu-width-expanded-active: $admin-menu-width-expanded + $admin-menu-bord
     a {
       color: $admin-menu-sub-menu-font-color;
       font-size: $admin-menu-font-size;
+      letter-spacing: $admin-menu-letter-spacing;
       text-transform: $admin-menu-text-transform;
-
     }
 
     li.current {

@@ -1,13 +1,30 @@
 //
-//––––––––––––––––––––––––––––––––––––––––––––––––––
 //  DASHBOARD
 //––––––––––––––––––––––––––––––––––––––––––––––––––
-//
+
 // At a glance.
 .index-php {
   .postbox#dashboard_right_now {
     .inside {
       padding-top: 12px;
+    }
+  }
+}
+
+
+//
+//  2 COLUMN LAYOUT
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@include respond-above(sm) {
+  .index-php {
+    #wpbody-content {
+      #dashboard-widgets {
+        #postbox-container-1,
+        #postbox-container-2 {
+          width: 49%;
+        }
+      }
     }
   }
 }
