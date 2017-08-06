@@ -194,6 +194,31 @@ $admin-menu-width-expanded-active: $admin-menu-width-expanded + $admin-menu-bord
 
 
 //
+//  FOLDED
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@include respond-above(lg) {
+  body.folded {
+    #adminmenu {
+      // When there's no sub-menu.
+      > li.current {
+        a.current {
+          width: auto;
+        }
+      }
+
+      // When there is a sub-menu.
+      li.wp-menu-open {
+        a.wp-menu-open {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+
+//
 //  DROPDOWN
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 

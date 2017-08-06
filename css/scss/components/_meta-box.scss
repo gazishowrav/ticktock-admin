@@ -62,8 +62,14 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 .metabox-holder {
-  .postbox {
+  .postbox,
+  .stuffbox {
     &.closed {
+      .ui-sortable-handle,
+      h2 {
+        border-radius: 5px;
+      }
+
       .inside {
         display: none;
       }
